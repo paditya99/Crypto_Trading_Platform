@@ -1,0 +1,13 @@
+target
+.git
+.gitignore
+Dockerfile
+README.md
+*.iml
+.idea
+.vscode
+node_modules
+.m2
+*.log
+*.tmp
+*.cache 

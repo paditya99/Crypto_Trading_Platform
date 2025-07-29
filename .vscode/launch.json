@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Launch Trading Application",
+            "request": "launch",
+            "mainClass": "com.project.trading.TradingApplication",
+            "projectName": "trading",
+            "envFile": "${workspaceFolder}/trading_backend/.env",
+            "args": "",
+            "cwd": "${workspaceFolder}/trading_backend"
+        }
+    ]
+} 

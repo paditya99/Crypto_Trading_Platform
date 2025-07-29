@@ -55,7 +55,7 @@ A comprehensive cryptocurrency trading platform built with Spring Boot backend a
 ### Backend
 - **Framework**: Spring Boot 3.5.0
 - **Security**: Spring Security with JWT
-- **Database**: MySQL with JPA/Hibernate
+- **Database**: PostgreSQL with JPA/Hibernate
 - **Build Tool**: Maven
 - **Authentication**: JWT (JSON Web Tokens)
 - **Email Service**: SMTP integration
@@ -106,7 +106,7 @@ Before running this application, make sure you have the following installed:
 
 - **Java 21** or higher
 - **Node.js 18** or higher
-- **MySQL 8.0** or higher
+- **PostgreSQL**
 - **Maven 3.6+**
 - **Git**
 
@@ -130,9 +130,10 @@ Create a `.env` file in the `trading_backend` directory:
 
 ```bash
 # Database Configuration
-DB_URL=jdbc:mysql://127.0.0.1:3306/trading
+
+DB_URL=jdbc:postgresql://localhost:5432/trading
 DB_USERNAME=root
-DB_PASSWORD=your_mysql_password
+DB_PASSWORD=your_postgresql_password
 
 # Payment Gateway Configuration
 RAZORPAY_API_KEY=your_razorpay_api_key
@@ -186,13 +187,13 @@ The frontend will start on `http://localhost:5173`
 
 ### Database Setup
 
-1. **Create MySQL Database**
+1. **Create PostgreSQL Database**
 ```sql
 CREATE DATABASE trading;
 ```
 
 2. **Update Database Configuration**
-Edit the `.env` file with your MySQL credentials.
+Edit the `.env` file with your PostgreSQL credentials.
 
 ### Email Configuration
 
@@ -343,29 +344,28 @@ npm run build
 - Update documentation as needed
 - Ensure all tests pass before submitting
 
-## 📝 License
+## 🤝 Contributing / Reporting Issues
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+If you find any bugs or issues, feel free to:
 
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. **Check the documentation** above
-2. **Search existing issues** in the repository
-3. **Create a new issue** with detailed information
-4. **Contact the maintainers** for urgent matters
+1. **Check the documentation** provided above.
+2. **Search existing issues** to avoid duplicates.
+3. **Create a new issue** with clear and detailed information.
+4. **Raise a Pull Request (PR)** if you have a fix or improvement.
+5. **Contact me directly** if you'd like to discuss the issue or need support.
 
 ## 🙏 Acknowledgments
 
-- **Spring Boot** for the robust backend framework
-- **React** for the modern frontend library
-- **Tailwind CSS** for the utility-first CSS framework
-- **ApexCharts** for the interactive charting library
-- **Razorpay & Stripe** for payment processing
+- **Spring Boot** – for powering the backend with a robust and scalable framework
+- **React.js** – for building a responsive and dynamic frontend
+- **Tailwind CSS** – for fast and flexible UI styling
+- **ApexCharts** – for creating interactive and real-time data visualizations
+- **Razorpay** & **Stripe** – for secure and reliable payment integration
 
 ---
 
-**⭐ Star this repository if you find it helpful!**
+🚀 **Live Project:** [https://tradecrypto25.netlify.app/](https://tradecrypto25.netlify.app/)
 
-**⚠️ Disclaimer**: This is a demo trading platform. For production use, ensure compliance with financial regulations and implement additional security measures. 
+⭐ **Star this repository** if you find it helpful!
+
+⚠️ **Disclaimer:** This is a demo cryptocurrency trading platform. For production use, please ensure full compliance with financial regulations and implement necessary security and validation measures.
